@@ -1,0 +1,295 @@
+/* Algemene Stijlen */
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #eceff1; /* Lichte grijze achtergrond */
+  margin: 0;
+  padding: 0;
+  color: #333;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 60px; /* Ruimte voor de footer */
+}
+
+h1 {
+  text-align: center;
+  color: #4a148c; /* Diep paars */
+  margin: 40px 0 20px 0;
+  font-size: 2em;
+}
+
+table {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table th,
+table td {
+  padding: 15px 20px;
+  text-align: left;
+}
+
+table th {
+  background-color: #6a1b9a; /* Paars voor kopteksten */
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+table tr:nth-child(even) {
+  background-color: #f3e5f5; /* Licht paars voor even rijen */
+}
+
+table tr:hover {
+  background-color: #e1bee7; /* Licht paars voor hover */
+}
+
+form {
+  width: 90%;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #4a148c; /* Diep paars */
+}
+
+input[type="number"],
+select {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: #f3e5f5; /* Licht paars */
+  transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus,
+select:focus {
+  border-color: #43a047; /* Groen accent bij focus */
+  outline: none;
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #6a1b9a; /* Paars */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #4a148c; /* Donkerder paars bij hover */
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.success {
+  color: #43a047; /* Groen */
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.error {
+  color: #c62828; /* Rood */
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.navigation-buttons {
+  width: 90%;
+  max-width: 600px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.navigation-buttons button {
+  flex: 1 1 45%;
+  margin: 10px 5px; /* Meer witruimte tussen knoppen */
+  font-size: 14px;
+  padding: 12px 20px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navigation-buttons button:hover {
+  transform: translateY(-2px);
+}
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #6a1b9a; /* Paars voor footer */
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Specifieke Stijlen voor Overzicht Punten */
+
+.view-overzicht-punten table th,
+.view-overzicht-punten table td {
+  font-size: 16px;
+}
+
+.view-overzicht-punten table th {
+  background-color: #8e24aa; /* Trendy paars */
+}
+
+.view-overzicht-punten h1 {
+  margin-top: 80px; /* Om ruimte te maken voor de footer */
+}
+
+/* Specifieke Stijlen voor Overzicht per Persoon */
+
+.view-overzicht-per-persoon table th,
+.view-overzicht-per-persoon table td {
+  text-align: center;
+}
+
+.view-overzicht-per-persoon table th {
+  background-color: #8e24aa; /* Trendy paars */
+  color: #fff;
+}
+
+.view-overzicht-per-persoon table tr:nth-child(odd) {
+  background-color: #f3e5f5; /* Licht paars voor odd rijen */
+}
+
+.view-overzicht-per-persoon table tr:hover {
+  background-color: #d1c4e9; /* Licht paars voor hover */
+}
+
+.view-overzicht-per-persoon h1 {
+  margin-top: 80px; /* Om ruimte te maken voor de footer */
+}
+
+/* Specifieke Stijlen voor de Startpagina */
+
+.view-startpagina {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.view-startpagina .subtitel {
+  font-size: 1.2em;
+  color: #4a148c; /* Diep paars */
+  margin-bottom: 40px;
+}
+
+.view-startpagina .navigation-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.view-startpagina .navigation-buttons button {
+  width: 60%;
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 18px;
+  background-color: #8e24aa; /* Trendy paars */
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.view-startpagina .navigation-buttons button:hover {
+  background-color: #71368a; /* Donkerder paars bij hover */
+  transform: translateY(-2px);
+}
+
+.view-startpagina h1 {
+  margin-bottom: 50px;
+  font-size: 32px;
+  color: #2c3e50;
+}
+
+/* Specifieke Stijlen voor 'Voeg Punt Toe' Button */
+
+.voeg-punt-toe-button {
+  background-color: #ab47bc; /* Paarse kleur voor onderscheid */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.voeg-punt-toe-button:hover {
+  background-color: #8e24aa; /* Donkerder paars bij hover */
+  transform: translateY(-2px);
+}
+
+/* Responsieve Stijlen */
+
+@media (max-width: 768px) {
+  table {
+    width: 100%;
+  }
+
+  form,
+  .navigation-buttons,
+  .view-overzicht-punten,
+  .view-overzicht-per-persoon {
+    width: 95%;
+  }
+
+  .navigation-buttons button {
+    flex: 1 1 100%;
+  }
+
+  footer {
+    position: relative;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .view-startpagina .navigation-buttons button {
+    width: 80%;
+  }
+}
